@@ -1,6 +1,15 @@
+<!-- begin Skills -->
 <div class="container skills-container">
   <h3>{{ site.skills_title | default: "Skills" }}</h3>
-  {% for skills in site.data.skills %}
-    {% include {{ skills.layout | default: 'left' | append: ".html" }} item=skills %}
+  {% for skill in site.data.skills %}
+  <div class="resume-item">
+      h4 class="resume-item-copy">{{ skill.skill }}</h4>
+    <span class="badge badge-pill badge-light">{{ skill.description_1 }}</span>
+    <span class="badge badge-pill badge-light">{{ skill.description_2 }}</span>
+    <span class="badge badge-pill badge-light">{{ skill.description_3 }}</span>
+    <span class="badge badge-pill badge-light">{{ skill.description_4 }}</span>
+    <span class="badge badge-pill badge-light">{{ skill.description_5 }}</span>
+  </div>
   {% endfor %}
 </div>
+<!-- end Skills -->
