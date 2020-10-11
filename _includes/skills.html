@@ -1,5 +1,6 @@
 <!-- begin Skills -->
 <div class="container skills-container">
+  <section class="content-section">
   <h3>{{ site.skills_title | default: "Skills" }}</h3>
   {% for skill in site.data.skills %}
   <div class="skill-item">
@@ -11,5 +12,6 @@
     <span class="badge badge-pill badge-light">{{ skill.description_5 }}</span>
   </div>
   {% endfor %}
+</section>
 </div>
 <!-- end Skills -->
