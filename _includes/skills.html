@@ -2,8 +2,8 @@
 <div class="container skills-container">
   <h3>{{ site.skills_title | default: "Skills" }}</h3>
   {% for skill in site.data.skills %}
-  <div class="resume-item">
-      h4 class="resume-item-copy">{{ skill.skill }}</h4>
+  <div class="skill-item">
+    <h4 class="skill-item-copy">{{ skill.skill }}</h4>
     <span class="badge badge-pill badge-light">{{ skill.description_1 }}</span>
     <span class="badge badge-pill badge-light">{{ skill.description_2 }}</span>
     <span class="badge badge-pill badge-light">{{ skill.description_3 }}</span>
